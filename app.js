@@ -6,3 +6,4 @@ function render(){
         <div class="box box${i}"><div>`
     }
 }
+render();

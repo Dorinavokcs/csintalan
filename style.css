@@ -1,0 +1,27 @@
+*{margin: 0;padding: 0;box-sizing: border-box;}
+main{
+    height: 100vh;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content{
+    display: grid;
+    grid-template-columns: 2rem 600px 2rem;
+}
+.table{
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 200px 200px 200px;
+}
+.left, .right{
+    align-self: center;
+}
+.up, .down{
+    display: flex;
+    justify-content: center;
+}
+.box{
+    border: 1px solid #000;
+}

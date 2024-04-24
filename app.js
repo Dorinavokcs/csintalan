@@ -7,3 +7,12 @@ function render(){
     }
 }
 render();
+
+const up = document.querySelector(".up");
+const down = document.querySelector(".down");
+const left = document.querySelector(".left");
+const right = document.querySelector(".right");
+
+let sorszam=0;
+let kivalasztva="./kepek1"
+let lepesek=0;

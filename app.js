@@ -16,3 +16,6 @@ const right = document.querySelector(".right");
 let sorszam=0;
 let kivalasztva="./kepek1"
 let lepesek=0;
+
+let images=['Red_X.svg.png','row-1-column-2.png','row-1-column-3.png','row-2-column-1.png','row-2-column-2.png','row-2-column-3.png','row-3-column-1.png','row-3-column-2.png','row-3-column-3.png'] ;
+

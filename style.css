@@ -17,11 +17,38 @@ main{
 }
 .left, .right{
     align-self: center;
+    font-size: 18px;
+    background-color: rgb(253,208,228);
+    border: 0px solid #000;
+    color: rgb(115,50,177);
 }
-.up, .down{
+.up{
     display: flex;
     justify-content: center;
+    margin-left: 320px;
+    width: 27px;
+    height: 30px;
+    font-size: 18px;
+    background-color: rgb(253,208,228);
+    border: 1px solid #000;
+    color: rgb(115,50,177);
+    border-radius: 20%;
+}
+.down{
+    display: flex;
+    justify-content: center;
+    margin-left: 315px;
+    width: 27px;
+    height: 30px;
+    font-size: 18px;
+    background-color: rgb(253,208,228);
+    border: 1px solid #000;
+    color: rgb(115,50,177);
+    border-radius: 20%;
 }
 .box{
     border: 1px solid #000;
+}
+.container{
+    background-color: aliceblue;
 }

@@ -17,6 +17,10 @@ let sorszam=0;
 let kivalasztva="./kepek1"
 let lepesek=0;
 
+let ido = 0;
+let idoMero=0;
+let kattintas=0;
+
 let images=['Red_X.svg.png','row-1-column-2.png','row-1-column-3.png','row-2-column-1.png','row-2-column-2.png','row-2-column-3.png','row-3-column-1.png','row-3-column-2.png','row-3-column-3.png'] ;
 
 let correctimages=['Red_X.svg.png','row-1-column-2.png','row-1-column-3.png','row-2-column-1.png','row-2-column-2.png','row-2-column-3.png','row-3-column-1.png','row-3-column-2.png','row-3-column-3.png'] ;
@@ -35,3 +39,12 @@ $(window).resize(function() {
         $('nav ul').removeAttr('style');
     }
 });
+
+
+
+ idoMero = setInterval(function() {
+ 
+    ido++;
+
+    
+    time.textContent = `Your Time ${ido} second(s)`;})

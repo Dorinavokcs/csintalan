@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Honk&family=Jacquard+24&display=swap');
 * {
     padding: 0;
     margin: 0;
@@ -5,8 +6,12 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     text-decoration: none;
-    font-family: arial, tahoma;
     list-style: none;
+}
+body{
+    
+    font-weight: 400;
+    font-style: normal;
 }
 
 main {
@@ -108,8 +113,9 @@ nav {
     min-height: 20rem;
     background: #fff center center no-repeat;
     background-size: cover;
-    filter: blur(3px);
 }
+
+
 
 .card-list {
     display: block;
@@ -118,6 +124,7 @@ nav {
     font-size: 0;
     text-align: center;
     list-style: none;
+    font-family: "Jacquard 24", system-ui;
 }
 
 .card {

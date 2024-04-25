@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Honk&family=Jacquard+24&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+h1{ font-family: "Jacquard 24", system-ui;
+    float: right;
+    margin-right: 25px;
+    margin-top: 17px;
+    text-align: center;
+    justify-content: center;
+   
+    display: flex;
+
+}
+
+main {
+    height: 100vh;
+    background-image: url(./img/pixel.gif);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.leiras{
+    display: grid;
+    grid-template-rows: auto;
+    justify-content: center;
+    text-align: center;
+    font-family: "Jacquard 24", system-ui;
+    float: right;
+    margin-top: 5rem;
+    font-size:300%;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    background-color: rgba(240, 248, 255, 0.685);
+    font-weight: bold;
+
+    color: rgb(106, 50, 113);
+    box-shadow: 0 0 3rem -1rem rgba(0, 0, 0, 0.5);
+    transition: transform 0.1s ease-in-out, box-shadow 0.1s;
+}
+
+body{ background-image: url(./img/pixel.gif);    background-repeat: no-repeat;
+    background-size: cover;}
+
+.begin{
+    font-family: "Jacquard 24", system-ui;
+}
+
+.here{    font-family: "Honk", system-ui;
+    font-variation-settings: "MORF" 15, "SHLN" 50;
+
+font-size: 2.5rem;}
+
+#kep{
+align-items: center;
+justify-content: center;
+margin-left: 40%;
+size: 4%;
+margin-top: 4rem;
+
+width: 20rem;
+height: 20rem;
+
+}

@@ -111,6 +111,8 @@ nav {
     margin-top: 17px;
 }
 
+
+
 .list-item li {
     float: left;
     padding: 13px 13px;
@@ -147,7 +149,28 @@ nav {
     font-family: "Jacquard 24", system-ui;
     color: rgb(99, 35, 110);
     text-shadow: 2px 2px rgb(221, 118, 225);
+    float: left;
 
+
+}
+
+#sotetseg{
+    border-color: #00000000;
+    margin-left: 3rem;
+    justify-content: right;
+    align-items: end;
+    border-style: hidden;
+    background-color: #00000000;
+    border-radius: 50%;
+    display: flex;
+    float: right;
+    width: 3rem;
+    height: 3rem;
+    background-color: #22222200;
+    font-size: 2.5rem;
+    font-family: "Jacquard 24", system-ui;
+    color: rgb(99, 35, 110);
+    text-shadow: 2px 2px rgb(221, 118, 225);
 
 
 }

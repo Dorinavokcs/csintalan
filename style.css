@@ -11,7 +11,7 @@
 
 main {
     height: 100vh;
-    background-image: url(./gifts/1f683f235c40e703273f5c0a340c613f.gif);
+    background-image: url(./img/wp9791390.gif);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -78,7 +78,7 @@ body {
 }
 
 .container {
-    background-color: rgb(222, 189, 240);
+    background-color: rgba(222, 189, 240, 0.83);
 }
 
 header {
@@ -140,6 +140,16 @@ nav {
     padding: 0px 5px;
     border-radius: 4px;
     cursor: pointer;
+}
+
+#time{
+    font-size: 2.5rem;
+    font-family: "Jacquard 24", system-ui;
+    color: rgb(99, 35, 110);
+    text-shadow: 2px 2px rgb(221, 118, 225);
+
+
+
 }
 
 @media (max-width: 1309px) {

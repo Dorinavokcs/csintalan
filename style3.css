@@ -15,7 +15,7 @@ h1{ font-family: "Jacquard 24", system-ui;
     margin-top: 17px;
     text-align: center;
     justify-content: center;
-   
+    text-shadow: black 4px 6px;
     display: flex;
 
 }

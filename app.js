@@ -8,27 +8,20 @@ function render(){
 }
 render();
 
-const up = document.querySelector(".up");
-const down = document.querySelector(".down");
-const left = document.querySelector(".left");
-const right = document.querySelector(".right");
 const time=document.getElementById("time");
 
 
-let sorszam=0;
 let kivalasztva="./kepek1"
-let lepesek=0;
 let kijelolt=0
 
 let ido = 0;
 let idoMero=0;
-let kattintas=0;
 
 let images=['Red_X.svg.png','row-1-column-2.png','row-1-column-3.png','row-2-column-1.png','row-2-column-2.png','row-2-column-3.png','row-3-column-1.png','row-3-column-2.png','row-3-column-3.png'] ;
 
-shuffle(images)
-
 let correctimages=['Red_X.svg.png','row-1-column-2.png','row-1-column-3.png','row-2-column-1.png','row-2-column-2.png','row-2-column-3.png','row-3-column-1.png','row-3-column-2.png','row-3-column-3.png'] ;
+
+shuffle(images)
 
 if(location.search.length>1){
 kivalasztva=`./${location.search.substring(1)}`;
@@ -67,6 +60,8 @@ if(images[i]=="Red_X.svg.png"){
 else{
 $(`.box${i}`)[0].style.backgroundImage=`url("${kivalasztva}/PineTools.com_files/${images[i]}")`;
 }
+$(".box").removeClass("kijelolt")
+document.querySelectorAll(".box")[kijelolt].classList.add("kijelolt")
 }}
 
 kirajzol();
@@ -92,10 +87,8 @@ function shuffle(array) {
 
   $(".box").on("click", event=>
   {
-$(".box").removeClass("kijelolt")
-event.target.classList.add("kijelolt")
 kijelolt=[...document.querySelectorAll(".box")].indexOf(event.target)
-
+kirajzol()
   })
 
 
@@ -104,9 +97,29 @@ if(hova>=0 && hova<9 && images[hova]=="Red_X.svg.png"){
 let temp=images[kijelolt]
 images[kijelolt]=images[hova]
 images[hova]=temp
-kirajzol()}
-}
+kijelolt=hova
+kirajzol()
+$("#hang")[0].currentTime=0
+$("#hang")[0].play()
+}}
 $(".left").on("click", event=>{tolas(kijelolt-1)})
 $(".right").on("click", event=>{tolas(kijelolt+1)})
 $(".up").on("click", event=>{tolas(kijelolt-3)})
 $(".down").on("click", event=>{tolas(kijelolt+3)})
+
+
+function gyozelem(){
+    let nyert=true
+
+    for(let i=0;i<images.length;i++){
+    if(images[i] !=correctimages[i])
+    
+    {
+        nyert=false
+
+    }
+    
+    }
+    if(nyert){clearInterval(idoMero);alert("You have won the game!")}
+    
+}

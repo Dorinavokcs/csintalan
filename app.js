@@ -21,7 +21,6 @@ let images=['Red_X.svg.png','row-1-column-2.png','row-1-column-3.png','row-2-col
 
 let correctimages=['Red_X.svg.png','row-1-column-2.png','row-1-column-3.png','row-2-column-1.png','row-2-column-2.png','row-2-column-3.png','row-3-column-1.png','row-3-column-2.png','row-3-column-3.png'] ;
 
-shuffle(images)
 
 if(location.search.length>1){
 kivalasztva=`./${location.search.substring(1)}`;
@@ -44,12 +43,7 @@ $(window).resize(function() {
 
 
 
- idoMero = setInterval(function() {
- 
-    ido++;
-
-    
-    time.textContent = `Your Time ${ido} second(s)`;},1000)
+ idoMero = 0;
 
 function kirajzol(){
 for(let i=0;i<images.length;i++){
@@ -85,11 +79,7 @@ function shuffle(array) {
   }
 
 
-  $(".box").on("click", event=>
-  {
-kijelolt=[...document.querySelectorAll(".box")].indexOf(event.target)
-kirajzol()
-  })
+ 
 
 
 function tolas(hova){
@@ -123,3 +113,36 @@ function gyozelem(){
     if(nyert){clearInterval(idoMero);alert("You have won the game!")}
     
 }
+
+
+function start(){
+    shuffle(images)
+
+   idoMero= setInterval(function() {
+ 
+        ido++;
+    
+        
+        time.textContent = `Your Time ${ido} second(s)`;},1000)
+
+        kirajzol()
+
+        $(".box").on("click", event=>
+        {
+      kijelolt=[...document.querySelectorAll(".box")].indexOf(event.target)
+      kirajzol()
+        })
+        $("#start")[0].style.display="none"
+
+    }
+
+$("#start").on("click", start)
+
+$("#hatter").on("click", event=>{
+
+
+$("main").toggleClass("vilagos")
+
+
+})
+

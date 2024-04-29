@@ -19,6 +19,11 @@ main {
     background-size: cover;
 }
 
+.vilagos{
+
+    background-image: url(./img/vilagos5.gif);
+}
+
 body {
     font-weight: 400;
     font-style: normal;
@@ -85,9 +90,22 @@ body {
     
 }
 
+.vilagos .kijelolt{
+
+    border: 4px solid rgb(74, 213, 255);
+
+}
+
 .container {
+    background-color: rgba(132, 97, 150, 0.83);
+}
+
+.vilagos .container{
+
     background-color: rgba(222, 189, 240, 0.83);
 }
+
+
 
 header {
     background-color: #8f20b1;
@@ -155,13 +173,60 @@ nav {
 #time{
     font-size: 2.5rem;
     font-family: "Jacquard 24", system-ui;
-    color: rgb(99, 35, 110);
-    text-shadow: 2px 2px rgb(221, 118, 225);
+    color: rgb(183, 86, 200);
+    text-shadow: 2px 2px rgb(101, 64, 102);
 
 
 
 }
 
+.vilagos #time{
+
+
+    font-size: 2.5rem;
+    font-family: "Jacquard 24", system-ui;
+    color: rgb(99, 35, 110);
+    text-shadow: 2px 2px rgb(221, 118, 225);
+
+    
+}
+
+#start{
+    float: right;
+    font-size: 2.5rem;
+    font-family: "Jacquard 24", system-ui;
+    color: rgb(183, 86, 200);
+    text-shadow: 2px 2px rgb(101, 64, 102);
+    margin-right: 3rem;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.vilagos #start{
+   
+    color: rgb(99, 35, 110);
+    text-shadow: 2px 2px rgb(221, 118, 225);
+
+
+}
+
+#hatter img{
+
+width: 60px;
+height: 60px;
+border-radius: 60%;
+
+}
+#hatter{
+
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    float: right;
+    margin-right: 3rem;
+
+}
 
 @media (max-width: 1309px) {
     .icon {

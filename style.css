@@ -163,8 +163,9 @@ nav {
 #time {
     font-size: 2.5rem;
     font-family: "Jacquard 24", system-ui;
-    color: rgb(183, 86, 200);
-    text-shadow: 2px 2px rgb(101, 64, 102);
+    color: rgb(209, 110, 226);
+    text-shadow: 2px 2px rgb(82, 40, 84);
+    text-decoration: underline rgb(77, 29, 121);
 }
 
 .vilagos #time {
@@ -172,24 +173,27 @@ nav {
     font-family: "Jacquard 24", system-ui;
     color: rgb(99, 35, 110);
     text-shadow: 2px 2px rgb(221, 118, 225);
+    text-decoration: underline rgb(236, 94, 255);
 }
 
 #start {
     float: right;
     font-size: 2.5rem;
     font-family: "Jacquard 24", system-ui;
-    color: rgb(183, 86, 200);
-    text-shadow: 2px 2px rgb(101, 64, 102);
+    color: rgb(209, 110, 226);
+    text-shadow: 2px 2px rgb(82, 40, 84);
     margin-right: 3rem;
     background-color: transparent;
     border: none;
     cursor: pointer;
-    border: 2px solid #000;
+    text-decoration: underline rgb(77, 29, 121);
+    border-radius: 30%;
 }
 
 .vilagos #start {
     color: rgb(99, 35, 110);
     text-shadow: 2px 2px rgb(221, 118, 225);
+    text-decoration: underline rgb(236, 94, 255);
 }
 
 #hatter img {

@@ -1,24 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
+
 <head>
     <link rel="icon" type="image/x-icon" href="./img/icons8-cubes-64.png" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome</title>
-    <link rel="stylesheet" href="style3.css">
+    <link rel="stylesheet" href="style.css">
+    <script
+  src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
+  integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8="
+  crossorigin="anonymous"></script>
+    <script src="app.js" defer></script>
+    <title>TILI-TOLI</title>
 </head>
+
 <body>
-
-
-    <div class="leiras">
-        <h1>Welcome!</h1>
-        <p>Hello, this is our project-game, your goal in this game to get the selected image using your slide, you can only move one slide, you have 3 pictures you can choose from, enjoy your time here!</p>
-        <p class="begin">click <a class="here" href="./udvozlunk.html">here</a> to begin !</p>
-    </div>
-
-    <div class="img">
-        <img src="./img/szivecske.gif" alt="" srcset="" id="kep">
-    </div>
-
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="img/logo.png" />
+            </div>
+            <div class="icon">
+                <span class="toggle">☰</span>
+            </div>
+            <ul class="list-item">
+                <li><a href="/index3.html">Home</a></li>
+                <li>
+                    <a href="/index.html?kepek3">Gekko</a>
+                </li>
+                <li>
+                    <a href="/index.html?keepek2">Reyna</a>
+                </li>
+                <li>
+                    <a href="/index.html?kepek1">Selfie</a>
+                </li>
+                <li><a href="/index2.html">About us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+     
+        <div class="container">
+            
+            <button type="button" id="hatter"><img src="./img/sotetek/225d656d4e5824c1e90f4b903fed5014.gif" alt="" srcset=""></button>
+            <button type="button" id="start">Start</button>
+            <p id="time">Press 'Start' to begin!</p>
+            
+          
+            <button class="up">⬆</button>
+            <div class="content">
+                <button class="left">⬅</button>
+                <div class="table"></div>
+                <button class="right">➡</button>
+            </div>
+            <button class="down">⬇</button>
+        </div>
+    
+    </main>
+<audio src="./sound/interface-124464.mp3" id="hang"></audio>
 </body>
+
 </html>
